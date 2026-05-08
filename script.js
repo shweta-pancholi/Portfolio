@@ -27,6 +27,8 @@ hamburger.addEventListener("click", () => {
     : '<i class="fa-solid fa-bars"></i>';
 });
 
+
+
 // Scroll Behavior
 
 const sections = document.querySelectorAll("section");
@@ -50,5 +52,15 @@ window.addEventListener("scroll", () => {
     if (link.getAttribute("href") === "#" + currentSection) {
       link.classList.add("active");
     }
+  });
+});
+
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("active");
+
+    hamburger.innerHTML =
+      '<i class="fa-solid fa-bars"></i>';
   });
 });
