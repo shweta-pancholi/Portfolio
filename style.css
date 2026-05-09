@@ -254,7 +254,7 @@ ul.menu li a:hover {
 }
 
 .project-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.09);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -386,6 +386,15 @@ footer a {
   border-radius: 25%;
   font-size: 18px;
 }
+
+.footer-sec{
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-sec span{
+  font-style: italic;
+}
 /* JAVASCRIPT */
 
 #particles-js {
@@ -470,13 +479,24 @@ footer a {
     right: 20%;
   }
 
+  .big-content::before {
+    left: 5%;
+  }
+  .big-content::after {
+    right: 5%;
+  }
+  /* Only Project card */
+
   .btn {
     padding: 8px 10px;
     font-size: 12px;
   }
 
-  .content {
+  .hero-left .content {
     text-align: center;
+  }
+
+  .content {
     gap: 12px;
   }
 
@@ -500,5 +520,41 @@ footer a {
 
   .footer-icon span {
     padding: 10px;
+  }
+
+  .btn-parent,
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .about-right .content {
+    margin-top: 1rem;
+  }
+
+  .project-card:hover {
+    transform: scale(1.01);
+  }
+
+  .contact-sec {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-sec a p {
+    font-size: 12px;
+  }
+
+  .contact-item {
+    border-right: none;
+  }
+
+  .footer-icon a {
+    padding: 12px;
+  }
+
+  .footer-sec p{
+    font-size: 12px;
+  }
+  .footer-sec span{
+    font-size: 10px;
   }
 }
